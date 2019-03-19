@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang = "en-UK">
+ <head>
+ <meta charset = "UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
+ <script type="text/javascript" src="./Java/Scripts.js"></script>
+ <title></title>
+ <style>
+ .Missing{
+  width: 50vw;
+  height: 30vw;
+ }
+</style>
+ </head>
+ <body>
+<div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=false" type="text/javascript"></script>
+ <ul>
+ <section class="grid-container">
+   <div class="griditem1">
+   <img class="Image" src="./images/Thailand.jpg" alt="MissingTextures"style="width:auto;height:12vw;"><button class="button3" href="https://www.google.com/" style="color:#49a2da;">APPLY NOW!</button>
+   </div>
+   <div class="griditem2">
+      <a href="#Contact"><button class="button2" style="color:#49a2da;">Contact Us Today</button></a>
+   </div>
+   <div class="griditem3">
+     <button class="button3"  onclick="openNav()" style="color:#49a2da;">Menu</button>
+   </div>
+ </section>
+ </ul>
+ <section class="hero">
+            <div class="hero-inner">
+                <a href="https://example.com/" class="btn">Apply Now!</a>
+            </div>
+</section>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <div class="header">
+        <h2 style="color:white;">Camp Thailand</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3 style="color:white;">Main Menu</h3>
+          <a href="#">Homepage</a>
+          <a href="#">About</a>
+          <a href="#">Camp Locations</a>
+        </div>
+        <div class="column">
+          <h3 style="color:white;">Camp Locations</h3>
+          <a href="#">Camp Phuket</a>
+          <a href="#">Camp Thailand Island Hop</a>
+          <a href="#">Backpackers Party</a>
+        </div>
+        <div class="column">
+          <h3 style="color:white;">About</h3>
+          <a href="#">Why You'll Love Us</a>
+          <a href="#">What Have Others Said?</a>
+          <a href="#">Teaching Qualifications</a>
+        </div>
+      </div>
+  </div>
+</div>
+<section style="background-color:#49a2da;">
+<h2 style="font-size:3vw;color:black" class = "title">Why Come to Camp Thailand</h2>
+<p style="font-size:2vw;color:black"><embed class="Missing" src="https://www.youtube.com/v/qdC25g3hGkU" alt="MissingTextures" width="200" height="200" align="right"s>Camp Thailand is offering you(and other young people like you!)an amazing opportunity within South East Asia. Our three week programme will provide you the chance to experience an incredible adventure in one of the most beautiful countries in the Pacific. Our locations,each with their own unique and stunning features, are amongst the most incredible in all of Asia - ranging from the Idyllic Camp Phuket and Camp Chiang Mai to the adventure-filled Backpackers Party and Camp Elephant - with each presenting their own activities ranging from island hopping through to temple touring. This acts as the backdrop for your personal growth, building of crucial skills, and making of phenomenal new friendships - all accomplished whilst making a positive impact on the world around you!. So, if you feel you're up to the challenge, then apply today!</p>
+</section>
+</br>
+</br>
+<section class="image-container">
+  <div class="image-item1">
+      <div class="images">
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<img  class="CTImages" src="./images/IslandHop.jpg" alt="CampThailand">
+        <img  class="CTImages" src="./images/campele.jpg" alt="CampThailand">
+        <img  class="CTImages" src="./images/backpackers.jpg" alt="CampThailand">
+		<img  class="CTImages" src="./images/chiangmai.jpg" alt="CampThailand">
+        <img  class="CTImages" src="./images/trailblazer.jpg" alt="CampThailand">
+        <img  class="CTImages" src="./images/cphuket.jpg" alt="CampThailand">
+      </div>
+  </div>
+  <div class="image-item2">
+	  <div style="text-align:center">
+		</br>
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+		<span class="dot" onclick="currentSlide(6)"></span> 
+		</br>
+		<p class="CTText">1st piece of test</p>
+		<p class="CTText">2st piece of test</p>
+		<p class="CTText">3st piece of test</p>
+		<p class="CTText">4st piece of test</p>
+		<p class="CTText">5st piece of test</p>
+		<p class="CTText">6st piece of test</p>
+      </div>
+  </div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+showSlidesL(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+  showSlidesL(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  showSlidesL(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("CTImages");
+  var texts = document.getElementsByClassName("CTText");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}if (n > texts.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}if (n < 1) {slideIndex = texts.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+    for (i = 0; i < texts.length; i++) {
+      texts[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+  texts[slideIndex-1].style.display = "block";   
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+

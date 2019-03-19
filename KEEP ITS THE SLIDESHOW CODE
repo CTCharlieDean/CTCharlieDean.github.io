@@ -1,0 +1,35 @@
+
+<section class="image-container">
+  <div class="image-item1">
+      <div class="images">
+		<img  class="CTImages" src="./images/IslandHop.jpg" alt="CampThailand">
+        <img  class="CTImages" src="./images/campele.jpg" alt="CampThailand">
+        <img  class="CTImages" src="./images/backpackers.jpg" alt="CampThailand">
+		<img  class="CTImages" src="./images/chiangmai.jpg" alt="CampThailand">
+        <img  class="CTImages" src="./images/trailblazer.jpg" alt="CampThailand">
+        <img  class="CTImages" src="./images/phuket.jpg" alt="CampThailand">
+      </div>
+  </div>
+  <div class="image-item2">
+	  <div style="text-align:center">
+		<p class="CTText">f             f f f f  H</p>
+      </div>
+  </div>
+</section>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("CTImages");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
